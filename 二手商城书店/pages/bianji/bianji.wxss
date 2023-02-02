@@ -1,0 +1,85 @@
+/* pages/bianji/bianji.wxss */
+.input1{
+  flex-direction: column;
+  border: 1px solid white;
+  margin: 20rpx;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: black;
+}
+.btnpicture{
+  margin: 0px;
+  margin-bottom: 0px;
+  left:0rpx!important;
+  background-color: red;
+}
+.panel{
+  margin: 20rpx;
+  justify-content: space-between;
+}
+.panel-list-item{
+  height: 35px;
+  display: flex;
+  margin: 1rpx;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: black;
+  background-color: white;
+  margin-bottom: 0px;
+  justify-content: space-between;
+  line-height: 35px;
+  font-size: 15px;
+}
+image{
+  border: white solid 0px;
+  height: 30px;
+  width: 30px;
+}
+.choose{
+  height: 30px;
+  width: 100px;
+  margin-bottom: 200px;
+  border: rgb(5, 164, 238) solid 1px;
+  margin-left: 50px;
+}
+.putmoney{
+  height: 30px;
+  width: 30px;
+  margin-bottom: 200px;
+  border: white solid 1px;
+  margin-left: 160px;
+}
+.btnback{
+  padding: 0;
+  background-color:transparent;   /*按钮透明*/  
+  border:none;				/*设置按钮边框*/
+  width: 10rpx;
+  height: 60rpx;
+  left:-30rpx!important;
+}
+.btn{
+  padding: 0;
+  background-color:transparent;   /*按钮透明*/  
+  border:none;				/*设置按钮边框*/
+  width: 10rpx;
+  height: 80rpx;
+  right:-10rpx!important;
+}
+.btn-img{
+  width: 80rpx;
+  height: 80rpx;
+}
+.saveBtn { 
+  width: 50% !important; 
+  float:left;
+  font-weight: 100;
+ }
+ .submitBtn { 
+  width: 50% !important;
+  float:right;
+ }
+.s_view{
+  bottom: 0rpx; 
+  position: fixed;
+  width: 100%;
+}

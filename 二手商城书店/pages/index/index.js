@@ -1,0 +1,82 @@
+const db=wx.cloud.database().collection("list")
+let Name=""
+let age=""
+let id=""
+Page({
+   //获取用户输入的名字
+  addname(event){
+   Name=event.detail.value
+  },
+  //获取用户输入的年龄
+  addage(event){
+    age=event.detail.value
+   },
+   //要删除的id
+   deldatainput(event){
+     console.log("要删除的id",event.detail.value)
+     id=event.detail.value
+   },
+    //要更新的id
+    udpdatainput(event){
+      console.log("要更新的id",event.detail.value)
+      id=event.detail.value
+    },
+     //要更新的名字
+     udpname(event){
+      Name=event.detail.value
+     },
+     //要更新的年龄
+    udpage(event){
+      age=event.detail.value
+     },
+   //增加数据
+dataadd(){
+  db.add({
+    data:{
+      Name:Name,
+      age:age 
+   },
+   success(res){
+     console.log("操作成功",res)
+   },
+   fail(res){
+    console.log("操作失败",res)
+  }
+  })
+},
+//删除数据
+deldata(){
+db.doc(id).remove({
+  success(res){
+    console.log("删除成功",res)
+  },
+  fail(res){
+   console.log("删除失败",res)
+  }
+})
+},
+//查询数据
+dataget(){
+  db.get({
+    success(res){
+      console.log("查询成功",res)
+    },
+    //修改数据
+    udpdata(){
+      db.doc(id).update({
+        data:{
+          Name:Name,
+          age:age 
+       },
+       success(res){
+         console.log("操作成功",res)
+       },
+       fail(res){
+        console.log("操作失败",res)
+      }
+    })
+    }
+  })
+}
+
+})

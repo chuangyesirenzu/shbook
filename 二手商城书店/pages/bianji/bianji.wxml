@@ -1,0 +1,43 @@
+<!--pages/bianji/bianji.wxml-->
+<button class="btnback" bindtap="goback" size="mini">＜back</button>
+<view class="input1">
+<textarea placeholder="说点什么..."bindinput="getvalue">
+</textarea>
+</view>
+
+<view class="panel">
+ <view class="panel-list-item">
+ <image src="/image/shangpinshuxing.png"></image>
+<text>商品属性</text>
+<input class="choose" placeholder="请选择" style="text-align:right"></input>
+<button bindtap="productproperties" class="btn" size="mini"><image class="btn-img" src="/image/xaila.png"></image></button>
+</view>
+
+ <view class="panel-list-item">
+  <image src="/image/钱.png"></image>
+<text>填写价格</text>
+<input class="putmoney" type="digit" placeholder="0.00" style="text-align:right" bindinput="getmoney"></input> 
+<text>元</text>
+</view>
+
+ <view class="panel-list-item">
+  <image src="/image/xaunzexiaoqu.png"></image>
+<text>所在校区</text>
+<input class="choose" placeholder="请选择" style="text-align:right"></input>
+ <button bindtap="xiaoqu" class="btn" size="mini"><image class="btn-img" src="/image/xaila.png"></image></button>
+</view>
+
+ <view class="panel-list-item">
+  <image src="/image/maimailianejie.png"></image>
+<text>买卖类型</text>
+<input class="choose" placeholder="请选择" style="text-align:right"></input>
+<button bindtap="bmstyle" class="btn" size="mini"><image class="btn-img" src="/image/xaila.png"></image></button>
+</view>
+</view>
+
+<button bindtap="pic" class="btnpicture">上传图片</button>
+
+<view class="s_view">
+      <button bindtap="caogao" class="saveBtn" >存为草稿</button>
+      <button bindtap="fabu" class="submitBtn" type="primary">发布</button>
+  </view>

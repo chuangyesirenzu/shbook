@@ -1,0 +1,48 @@
+{
+    "pages": [
+      "pages/index/index",
+        "pages/home/home",
+        "pages/bianji/bianji",
+        "pages/maimai/maimai",
+        "pages/me/me"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#2E8B57",
+        "navigationBarTitleText": "二手商城书店",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+      "color": "#515151",
+      "selectedColor": "#2E8B57",
+      "borderStyle": "white",
+      "list": [{
+        "selectedIconPath": "image/tab 首页 已选择.jpg",
+        "iconPath": "image/tab 首页 未选择.jpg",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/tab 发布 已选择.jpg",
+        "iconPath": "image/tab 发布 未选择.jpg",
+        "pagePath": "pages/bianji/bianji",
+        "text": "发布"
+      },
+      {
+        "selectedIconPath": "image/tab 购物车 已选择.jpg",
+        "iconPath": "image/tab 购物车 未选择.jpg",
+        "pagePath": "pages/maimai/maimai",
+        "text": "买卖"
+      },
+    
+      {
+        "selectedIconPath": "image/tab 个人 已选择.jpg",
+        "iconPath": "image/tab 个人 未选择.jpg",
+        "pagePath": "pages/me/me",
+        "text": "我"
+      }
+      ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

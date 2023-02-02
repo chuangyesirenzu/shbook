@@ -1,0 +1,13 @@
+<!--添加数据-->
+<input placeholder='输入名字' bindinput='addname'></input>
+<input placeholder='输入年龄' bindinput='addage'></input>
+<button bindtap="dataadd" type="primary">添加数据</button>
+<button bindtap="dataget" type="primary">查询数据</button>
+<!--删除数据-->
+<input placeholder='填写要删除的id' bindinput="deldatainput"></input>
+<button bindtap="deldata" type="primary">删除数据</button>
+<!--更新数据-->
+<input placeholder='填写要更新的id' bindinput="udpdatainput"></input>
+<input placeholder='输入名字' bindinput='udpname'></input>
+<input placeholder='输入年龄' bindinput='udpage'></input>
+<button bindtap="udpdata" type="primary">更新数据</button>
